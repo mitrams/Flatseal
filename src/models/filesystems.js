@@ -60,6 +60,13 @@ var FlatpakFilesystemsModel = GObject.registerClass({
                 value: this.constructor.getDefault(),
                 example: 'filesystem=home',
             },
+            'filesystems-themes': {
+                supported: this._info.supports('1.7.1'),
+                description: _('All theming related files'),
+                option: 'themes',
+                value: this.constructor.getDefault(),
+                example: 'filesystem=themes',
+            },
         };
     }
 
